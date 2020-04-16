@@ -1,0 +1,37 @@
+# UI Translations for Personal IP Address.
+# Copyright (C) 2010 Andrew Olmsted
+# This file is distributed under the same license as the personal-ip-address package.
+# Andrew Olmsted <andrew.olmsted@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: personal-ip-address 0.4\n"
+"Report-Msgid-Bugs-To: andrew.olmsted@gmail.com\n"
+"POT-Creation-Date: 2010-01-08 09:42-0500\n"
+"PO-Revision-Date: 2010-01-08 10:05-0500\n"
+"Last-Translator: Andrew Olmsted <andrew.olmsted@gmail.com>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../personal-ip-address.c:182
+msgid "IP"
+msgstr "IP"
+
+#: ../personal-ip-address.c:185 ../personal-ip-address.c:252
+msgid "(no IP found)"
+msgstr "(no IP found)"
+
+#: ../personal-ip-address.c:266
+msgid "Personal IP Address Settings"
+msgstr "Personal IP Address Settings"
+
+#: ../personal-ip-address.c:272
+msgid "Connect to network when pressed"
+msgstr "Connect to network when pressed"
+
+#: ../personal-ip-address.c:277
+msgid "Use compact layout"
+msgstr "Use compact layout"

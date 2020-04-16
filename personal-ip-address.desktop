@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Personal IP Address
+Comment=Handy reminder of your IP address
+Type=default
+X-Path=personal-ip-address.so
