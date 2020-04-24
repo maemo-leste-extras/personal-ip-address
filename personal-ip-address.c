@@ -41,10 +41,12 @@
 
 #define HOME_DIR g_get_home_dir()
 
-#define IFCONFIG "/sbin/ifconfig "
-#define IP_COMMAND " | grep \"inet addr\" | awk -F: '{print $2}' | awk '{print $1}'"
+//#define IFCONFIG "/sbin/ifconfig "
+#define IP_ADDR "/bin/ip -4 address show "
+#define IP_COMMAND " | grep \"inet\" | awk -F' ' '{print $2}' | awk -F/ '{print $1}' "
 //#define INTERFACE_COMMAND "/sbin/route -n | awk '$1 == \"0.0.0.0\" {print $8}'"
-#define INTERFACE_COMMAND "/sbin/route -n | awk '$1 == \"0.0.0.0\" && $3 == \"0.0.0.0\" {print $8}'"
+//#define INTERFACE_COMMAND "/sbin/route -n | awk '$1 == \"0.0.0.0\" && $3 == \"0.0.0.0\" {print $8}'"
+#define INTERFACE_COMMAND "/bin/ip -4 route show default | awk -F' ' '{print $5}' "
 
 #define _tran(String) dgettext("hildon-libs", String)
 #define _(String) gettext (String)
@@ -303,7 +305,7 @@ gboolean personal_ip_address_update_content (PersonalIpAddress *self)
 	pclose (fp);
 	
 	if (found) {
-		gchar *cmd = g_strconcat (IFCONFIG, interface, IP_COMMAND, NULL);
+		gchar *cmd = g_strconcat (IP_ADDR, interface, IP_COMMAND, NULL);
 		found = FALSE;
 		fp = popen (cmd, "r");
 		
