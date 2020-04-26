@@ -1,13 +1,11 @@
-AC_INIT(Makefile.am)
-
-PACKAGE=personal-ip-address
-VERSION=0.4
-
-AM_INIT_AUTOMAKE($PACKAGE, $VERSION)
+AC_INIT([personal-ip-address], [0.4])
+AC_CONFIG_SRCDIR([./personal-ip-address.c])
+AM_INIT_AUTOMAKE([foreign])
 
 AC_PROG_CPP
 AC_PROG_INSTALL
 AC_PROG_LIBTOOL
+AC_CONFIG_MACRO_DIRS([m4])
 
 PKG_CHECK_MODULES(GTK, gtk+-2.0)
 AC_SUBST(GTK_LIBS)
