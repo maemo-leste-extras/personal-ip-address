@@ -1,10 +1,10 @@
 Source: personal-ip-address
 Priority: extra
-Maintainer: Andrew Olmsted <andrew.olmsted@gmail.com>
-Build-Depends: debhelper (>= 5), libhildondesktop1-dev, libgtk2.0-dev, libconic0-dev, icd2-osso-ic-dev, libdbus-glib-1-dev
+Maintainer: Sicelo A. Mhlongo <absicsz@gmail.com>
+Build-Depends: debhelper (>= 10), libhildondesktop1-dev, libgtk2.0-dev, libconic0-dev, icd2-osso-ic-dev, libdbus-glib-1-dev
 Standards-Version: 3.7.2
 Section: user/desktop
-Xsbc-Bugtracker: https://bugs.maemo.org/enter_bug.cgi?product=Personal%20IP%20Address
+Xsbc-Bugtracker: https://github.com/maemo-leste-extras/personal-ip-address/issues
 
 Package: personal-ip-address
 Architecture: any

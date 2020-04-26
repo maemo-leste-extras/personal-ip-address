@@ -1,3 +1,10 @@
+personal-ip-address (0.4-3) unstable; urgency=low
+
+  * Change widget to use iproute2 utils to fetch data
+  * Update bugtracker URL for Leste
+
+ -- Sicelo A. Mhlongo <absicsz@gmail.com>  Sun, 26 Apr 2020 23:31:25 +0200
+
 personal-ip-address (0.4-2) unstable; urgency=low
 
   * Change widget width back to normal if not displaying interface name
