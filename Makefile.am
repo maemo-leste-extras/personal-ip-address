@@ -31,6 +31,9 @@ EXTRA_DIST = config.rpath m4/ChangeLog 					\
 	debian/install				\
         personal-ip-address.desktop
 
+install-data-hook:
+	@(cd $(DESTDIR)$(libhhdir) && $(RM) $(libhh_LTLIBRARIES))
+
 deb:
 	./make-package $(PACKAGE) $(VERSION)
 

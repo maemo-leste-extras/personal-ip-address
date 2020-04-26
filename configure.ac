@@ -2,6 +2,8 @@ AC_INIT([personal-ip-address], [0.4])
 AC_CONFIG_SRCDIR([./personal-ip-address.c])
 AM_INIT_AUTOMAKE([foreign])
 
+LT_INIT([shared disable-static])
+
 AC_PROG_CPP
 AC_PROG_INSTALL
 AC_PROG_LIBTOOL

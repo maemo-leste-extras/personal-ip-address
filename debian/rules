@@ -2,40 +2,9 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-
-
-# These are used for cross-compiling and for saving the configure script
-# from having to guess our platform (since we know it already)
-DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-
-
-ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
-	CFLAGS_MAINT += -O0
-else
-	CFLAGS_MAINT += -O2
-endif
-
-CFLAGS_MAINT  += -Wall -g -fPIC
-LDFLAGS_MAINT += -Wl,--as-needed
-
-export DEB_CFLAGS_MAINT_APPEND  = $(CFLAGS_MAINT)
-export DEB_LDFLAGS_MAINT_APPEND = $(LDFLAGS_MAINT)
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -g -fPIC
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
 	dh $@
-
-override_dh_autoreconf:
-	dh_autoreconf --as-needed
-	intltoolize --automake --copy --force
-
-override_dh_autoreconf_clean:
-	dh_autoreconf_clean
-	rm -f m4/intltool.m4
-	rm -f po/Makefile.in.in
-
-override_dh_auto_install:
-	dh_auto_install
-	find debian/personal-ip-address/usr/lib -name '*.la' -delete
-	find debian/personal-ip-address/usr/lib -name '*.a' -delete
 
