@@ -597,16 +597,16 @@ static void personal_ip_address_init (PersonalIpAddress *self)
 	
 	if (self->priv->compactMode) {
 		if (self->priv->showInterface) {
-			gtk_widget_set_size_request (GTK_WIDGET (self), 315, 40);
-			gtk_window_resize (GTK_WINDOW (self), 315, 40);
+			gtk_widget_set_size_request (GTK_WIDGET (self), 320, 40);
+			gtk_window_resize (GTK_WINDOW (self), 320, 40);
 		} else {
 			gtk_widget_set_size_request (GTK_WIDGET (self), 352, 40);
 			gtk_window_resize (GTK_WINDOW (self), 352, 40);
 		}
 	} else {
 		if (self->priv->showInterface) {
-			gtk_widget_set_size_request (GTK_WIDGET (self), 315, 56);
-			gtk_window_resize (GTK_WINDOW (self), 315, 56);
+			gtk_widget_set_size_request (GTK_WIDGET (self), 320, 56);
+			gtk_window_resize (GTK_WINDOW (self), 320, 56);
 		} else {
 			gtk_widget_set_size_request (GTK_WIDGET (self), 352, 56);
 			gtk_window_resize (GTK_WINDOW (self), 352, 56);
