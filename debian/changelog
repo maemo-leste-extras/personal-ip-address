@@ -1,3 +1,10 @@
+personal-ip-address (0.5-1) unstable; urgency=low
+
+  * Change widget size for longer interface names
+  * Improve method for finding interface name
+
+ -- Sicelo A. Mhlongo <absicsz@gmail.com>  Fri, 26 Jun 2020 13:02:21 +0200
+
 personal-ip-address (0.4-4) unstable; urgency=low
 
   * Fix save location for translations

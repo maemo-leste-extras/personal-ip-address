@@ -1,4 +1,4 @@
-AC_INIT([personal-ip-address], [0.4])
+AC_INIT([personal-ip-address], [0.5])
 AC_CONFIG_SRCDIR([./personal-ip-address.c])
 AM_INIT_AUTOMAKE([foreign])
 

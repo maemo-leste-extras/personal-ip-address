@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: personal-ip-address 0.4\n"
+"Project-Id-Version: personal-ip-address 0.5\n"
 "Report-Msgid-Bugs-To: andrew.olmsted@gmail.com\n"
 "POT-Creation-Date: 2010-01-08 09:42-0500\n"
 "PO-Revision-Date: 2010-01-08 10:05-0500\n"
